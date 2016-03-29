@@ -16,15 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void selectColor(View view) {
-        //Intent( 傳令的 Activity , 接受傳令的 Activity)
-        Intent intent = new Intent(this, ColorPickerActivity.class);
-        //startActivity(intent); //傳令
-        startActivityForResult(intent, SELECT_COLOR_REQUEST); //傳令需要能返回結果
 
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -58,15 +52,27 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void selectColor(View view) {
+        //Intent( 傳令的 Activity , 接受傳令的 Activity)
+        Intent intent = new Intent(this, ColorPickerActivity.class);
+        //startActivity(intent); //傳令
+        startActivityForResult(intent, SELECT_COLOR_REQUEST); //傳令需要能返回結果
+        finish();
+
+    }
+
 
     public void next(View view) {
         Intent intent = new Intent(this, Activity1.class);
         startActivity(intent);
+        finish();
     }
 
 
     public void edittext(View view) {
         Intent intent = new Intent(this , EditTextActivity.class) ;
         startActivityForResult(intent, EDIT_TEXT_REQUEST); //傳令需要能返回結果
+        finish();
+
     }
 }

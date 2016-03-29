@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">lab07_Activities</string>
+    <string name="question_1">你</string>
+    <string name="question_1_a">1</string>
+    <string name="question_1_b">2</string>
+    <string name="question_1_c">3</string>
+
+    <string name="question_2">我</string>
+    <string name="question_2_a">4</string>
+    <string name="question_2_b">5</string>
+    <string name="question_2_c">6</string>
+
+    <string name="question_3">他</string>
+    <string name="question_3_a">7</string>
+    <string name="question_3_b">8</string>
+    <string name="question_3_c">9</string>
 </resources>
