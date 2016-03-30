@@ -6,14 +6,15 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.student.lab07_activities.MainActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
+
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -26,44 +27,44 @@
                 android:layout_height="wrap_content"
                 android:buttonTint="@android:color/holo_red_light"
                 android:checked="true"
-                android:onClick="clickcolor"
-                android:text="hold_red_light"
+                android:onClick="clickColor"
+                android:text="holo_red_light"
                 android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_red_light"
-                />
+                android:textColor="@android:color/holo_red_light" />
+
             <RadioButton
                 android:id="@+id/radio_holo_orange_dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:buttonTint="@android:color/holo_red_dark"
-                android:onClick="clickcolor"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:onClick="clickColor"
                 android:text="holo_orange_dark"
                 android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_orange_dark"
-                />
+                android:textColor="@android:color/holo_orange_dark" />
+
             <RadioButton
-                android:id="@+id/radio_holo_green_light"
+                android:id="@+id/holo_green_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:buttonTint="@android:color/holo_green_light"
-                android:onClick="clickcolor"
-                android:text="holo_red_dark"
+                android:onClick="clickColor"
+                android:text="holo_green_light"
                 android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_green_light"
-                />
+                android:textColor="@android:color/holo_green_light" />
+
             <RadioButton
-                android:id="@+id/radio_holo_blue_dark"
+                android:id="@+id/holo_blue_dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:buttonTint="@android:color/holo_blue_dark"
-                android:onClick="clickcolor"
+                android:onClick="clickColor"
                 android:text="holo_blue_dark"
                 android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="@android:color/holo_blue_dark"
-                />
+                android:textColor="@android:color/holo_blue_dark" />
+
         </RadioGroup>
 
         <LinearLayout
@@ -78,17 +79,20 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="cancel"
-                android:text="CANCLE"
-                />
+                android:text="CANCEL" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="ok"
-                android:text="ok"
-                />
+                android:text="OK" />
 
 
         </LinearLayout>
+
+
     </LinearLayout>
+
+
 </RelativeLayout>

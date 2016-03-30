@@ -7,50 +7,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.student.lab07_activities.ColorPickerActivity">
+    tools:context="com.teacheryin.android.lab07_activities.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="顏色未設定"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Large" />
 
 
+    </ScrollView>
 
-    <TextView
-        android:id="@+id/tv_color"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:text="顏色未設定"
-        android:gravity="center"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:layout_centerHorizontal="true"
-        />
 
     <Button
-        android:id="@+id/btn_color"
+        android:id="@+id/btn_select_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="選擇顏色"
-        android:layout_below="@+id/tv_color"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/scroll_view"
+        android:layout_centerHorizontal="true"
         android:onClick="selectColor"
-        />
+        android:text="選擇顏色" />
+
+
     <Button
         android:id="@+id/btn_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_color"
-        android:layout_centerInParent="true"
-        android:onClick="edittext"
-        android:text="輸入文字"
-        />
+        android:layout_below="@id/btn_select_color"
+        android:layout_centerHorizontal="true"
+        android:onClick="editText"
+        android:text="輸入文字" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_edit_text"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:onClick="next"
-        android:text="NEXT"
-        />
-
-
-
-
+        android:text="NEXT" />
 
 </RelativeLayout>
