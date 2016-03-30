@@ -18,11 +18,12 @@ public class Activity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
+        init() ;
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
+
+    public void init(){
+
 
         m_tv_question = (TextView)findViewById(R.id.tv_question) ;
         m_but_a = (Button)findViewById(R.id.radio_a) ;
@@ -43,9 +44,9 @@ public class Activity3 extends AppCompatActivity {
 
     public void next3(View view) {
         Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
-        finish();
+
+
     }
 
     public void back3(View view) {
